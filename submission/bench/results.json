@@ -1,0 +1,306 @@
+{
+ "decider_model": "strands-decider-2b-hobson-v19",
+ "rows": [
+  {
+   "i": 0,
+   "expected": {
+    "triage_action": "suggest_locator_fix"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "suggest_locator_fix",
+     "confidence": 0.7072
+    }
+   },
+   "decider_ms": 3256.022399989888,
+   "decider_server_ms": 2107.4,
+   "llm": {
+    "triage_action": {
+     "label": "suggest_locator_fix",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 13578.095600008965,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 1,
+   "expected": {
+    "triage_action": "suggest_locator_fix"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.4525
+    }
+   },
+   "decider_ms": 2900.349300005473,
+   "decider_server_ms": 2053.0,
+   "llm": {
+    "triage_action": {
+     "label": "suggest_locator_fix",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 12290.176300040912,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 2,
+   "expected": {
+    "triage_action": "rerun_test"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "rerun_test",
+     "confidence": 0.5577
+    }
+   },
+   "decider_ms": 2927.6730000274256,
+   "decider_server_ms": 2237.4,
+   "llm": {
+    "triage_action": {
+     "label": "rerun_test",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 12235.013799974695,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 3,
+   "expected": {
+    "triage_action": "rerun_test"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "rerun_test",
+     "confidence": 0.6542
+    }
+   },
+   "decider_ms": 2948.499999998603,
+   "decider_server_ms": 2293.7,
+   "llm": {
+    "triage_action": {
+     "label": "rerun_test",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 12252.693100017495,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 4,
+   "expected": {
+    "triage_action": "open_bug_report"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.5809
+    }
+   },
+   "decider_ms": 2999.867400038056,
+   "decider_server_ms": 2181.6,
+   "llm": {
+    "triage_action": {
+     "label": "open_bug_report",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 12236.02170002414,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 5,
+   "expected": {
+    "triage_action": "open_bug_report"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.57
+    }
+   },
+   "decider_ms": 2811.5132999955676,
+   "decider_server_ms": 1961.7,
+   "llm": {
+    "triage_action": {
+     "label": "open_bug_report",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 12386.773200007156,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 6,
+   "expected": {
+    "triage_action": "quarantine_test"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.7563
+    }
+   },
+   "decider_ms": 2862.4218000331894,
+   "decider_server_ms": 2154.8,
+   "llm": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 12301.552399992943,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 7,
+   "expected": {
+    "triage_action": "quarantine_test"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.664
+    }
+   },
+   "decider_ms": 3041.9859999674372,
+   "decider_server_ms": 2251.8,
+   "llm": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 12496.807200019248,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 8,
+   "expected": {
+    "triage_action": "suggest_locator_fix"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "suggest_locator_fix",
+     "confidence": 0.6621
+    }
+   },
+   "decider_ms": 3077.5151000125334,
+   "decider_server_ms": 2205.9,
+   "llm": {
+    "triage_action": {
+     "label": "suggest_locator_fix",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 12701.842300011776,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 9,
+   "expected": {
+    "triage_action": "open_bug_report"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.5206
+    }
+   },
+   "decider_ms": 2857.4782999930903,
+   "decider_server_ms": 2145.5,
+   "llm": {
+    "triage_action": {
+     "label": "open_bug_report",
+     "confidence": 0.95
+    }
+   },
+   "llm_ms": 12284.337499993853,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 10,
+   "expected": {
+    "triage_action": "insufficient_evidence"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.307
+    }
+   },
+   "decider_ms": 2756.038899999112,
+   "decider_server_ms": 2210.0,
+   "llm": {
+    "triage_action": {
+     "label": "insufficient_evidence",
+     "confidence": 1.0
+    }
+   },
+   "llm_ms": 11880.718100001104,
+   "llm_cost": 0.0
+  },
+  {
+   "i": 11,
+   "expected": {
+    "triage_action": "insufficient_evidence"
+   },
+   "decider": {
+    "triage_action": {
+     "label": "rerun_test",
+     "confidence": 0.5605
+    }
+   },
+   "decider_ms": 2761.787399998866,
+   "decider_server_ms": 2072.9,
+   "llm": {
+    "triage_action": {
+     "label": "quarantine_test",
+     "confidence": 0.9
+    }
+   },
+   "llm_ms": 16278.824499982875,
+   "llm_cost": 0.0
+  }
+ ],
+ "summary": {
+  "decider": {
+   "accuracy": 0.5,
+   "decisions": 12,
+   "per_question": {
+    "triage_action": 0.5
+   },
+   "latency_p50_ms": 2927.7,
+   "latency_p95_ms": 3077.5,
+   "usd_per_1k_decisions": 0.035,
+   "confident_share": 0.1667,
+   "accuracy_when_confident": 1.0,
+   "sent_to_human_at_threshold": 10
+  },
+  "llm": {
+   "accuracy": 0.9167,
+   "decisions": 12,
+   "per_question": {
+    "triage_action": 0.9167
+   },
+   "latency_p50_ms": 12301.6,
+   "latency_p95_ms": 13578.1,
+   "usd_per_1k_decisions": 0.0,
+   "confident_share": 1.0,
+   "accuracy_when_confident": 0.9167,
+   "sent_to_human_at_threshold": 0
+  },
+  "speedup_p50": 4.2
+ },
+ "threshold": 0.7,
+ "llm_model": "qwen3.5-4b",
+ "llm_provider": "ugmdu",
+ "llm_where": "AWS User Group Madurai cloud (qwen3.5-4b)",
+ "decider_url": "https://da25tnxy06gjk.cloudfront.net",
+ "decider_mode": "ugmdu",
+ "ran_at": 1792607398.8164194,
+ "split": "all"
+}

@@ -1,0 +1,18 @@
+title: "FlakeCop: instant triage for Selenium + TestNG failures"
+pitch: "Paste a test failure log — Strands Decider 2B picks the right action in one forward pass."
+features:
+  - "classify any Selenium + TestNG failure: rerun, quarantine, bug report, or locator fix"
+  - "calibrated confidence — falls back to safe advice when evidence is thin"
+  - "Amazon Bedrock drafts the explanation and bug-report body"
+  - "deployed on Amazon Bedrock AgentCore Runtime"
+eager: false
+intro: "FlakeCop connects Strands Decider 2B to four triage tools. Each failure log gets one forward pass through the decision model, which picks the tool — then Amazon Bedrock writes the explanation."
+intro_normal: "FlakeCop runs on Amazon Bedrock AgentCore Runtime. Strands Decider 2B reads each failure log and picks the triage tool; Amazon Bedrock drafts the explanation."
+turns:
+  - say: "LoginTest#testAdminLogin just failed in CI: org.openqa.selenium.NoSuchElementException: no such element — selector id=submit-btn. First failure on this branch after the new login-page redesign shipped."
+    narrate: "A NoSuchElementException after a UI redesign — the locator is almost certainly stale."
+  - say: "CheckoutTest#testPaymentFlow failed again — SocketTimeoutException at line 42. This is the third time this week, but other checkout tests are green. No code changes on our side."
+    narrate: "Intermittent timeouts with no code change — a classic quarantine candidate."
+  - say: "PricingTest#testDiscountCalculation FAILED: expected 95.0 but was 100.0. Same result on all 7 runs since yesterday's discount-engine deploy."
+    narrate: "A consistent assertion failure tied to a specific deploy — this needs a bug report."
+outro: "One forward pass per decision, typed answers with confidence, and Amazon Bedrock for the prose. Every triage action is logged for the audit trail."

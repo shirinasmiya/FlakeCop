@@ -1,0 +1,14 @@
+# Amazon Bedrock AgentCore features for FlakeCop.
+# Both are off for the initial build; enable before deploying if needed.
+
+memory:
+  enabled: false
+  name: flakecopmemory
+  strategies: [SEMANTIC]
+  expiry_days: 30
+
+gateway:
+  enabled: false
+  name: tools
+  authorizer: AWS_IAM
+  targets: []
